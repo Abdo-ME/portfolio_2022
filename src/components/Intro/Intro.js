@@ -10,17 +10,13 @@ import Crown from '../../img/crown.png'
 import Thumbup from '../../img/thumbup.png'
 import Glassesimoji from '../../img/glassesimoji.png'
 import FloatingDiv from './FloatingDiv/FloatingDiv'
+import HeadTitle from '../headTitle/HeadTitle'
 
 const Intro = () => {
     return (
         <div className='intro'>
             <div className="i-left">
-                <div className="i-name">
-                    <span>Hey! I Am</span>
-                    <span>Abdelhak Mehda</span>
-                    <span>Frontend Devoloper with hight level of experience in web devolopment, producting the quality work</span>
-                </div>
-                <button className='button i-button'> Hire me</button>
+                <HeadTitle title1='Hey! I Am' title2='Abdelhak Mehda' bodyTxt='Frontend Devoloper with hight level of experience in web devolopment, producting the quality work' btnTxt='Hire me' />
                 <div className="i-icons">
                     <a href="https://github.com/Abdo-ME" target='_blank' rel="noopener noreferrer">
                         <img src={Github} alt="Github" />
