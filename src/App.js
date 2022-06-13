@@ -4,6 +4,9 @@ import './App.css'
 import Intro from './components/Intro/Intro'
 import Services from './components/Services/Services'
 import Experience from './components/Experience/Experience'
+import Works from './components/Works/Works'
+import Portfolio from './components/portfolio/Portfolio'
+import Testimonials from './components/Testimonials/Testimonials'
 const App = () => {
   return (
     <div className='App'>
@@ -11,6 +14,9 @@ const App = () => {
       <Intro />
       <Services />
       <Experience />
+      <Works />
+      <Portfolio />
+      <Testimonials />
     </div>
   )
 }

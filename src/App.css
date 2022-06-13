@@ -29,7 +29,7 @@
   transition: var(--transition);
 }
 .button:hover {
-  color: white;
   color: var(--orange);
   background: white;
+  border: 1px solid var(--orange);
 }
