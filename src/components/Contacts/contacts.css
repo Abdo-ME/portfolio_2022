@@ -11,12 +11,16 @@
   justify-content: center;
   align-items: center;
 }
+
 .c-left span {
   font-size: 2rem;
   font-weight: bold;
 }
 .c-left span:nth-of-type(2) {
   color: var(--orange);
+}
+.c-left .awesome {
+  gap: 0;
 }
 .c-right {
   display: flex;
