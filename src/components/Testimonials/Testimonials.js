@@ -36,9 +36,9 @@ const Testimonials = () => {
                 <span>from me...</span>
             </div>
             <Swiper
-                pagination={true}
+                pagination={{ clickable: true }}
                 modules={[Pagination]}
-            // slidesPerView={1}
+                slidesPerView={1}
             >
                 {clients.map((client, index) => (
                     <SwiperSlide key={index} >
