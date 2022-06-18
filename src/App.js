@@ -8,9 +8,14 @@ import Works from './components/Works/Works'
 import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/Testimonials/Testimonials'
 import Contacts from './components/Contacts/Contacts'
+import Footer from './components/Footer/Footer'
+import { themContext } from './Context'
+import { useContext } from 'react'
 const App = () => {
+  const { state: { darkMode } } = useContext(themContext)
+
   return (
-    <div className='App'>
+    <div className={`App ${darkMode ? 'darkMode' : ''}`}>
       <Navbar />
       <Intro />
       <Services />
@@ -19,6 +24,7 @@ const App = () => {
       <Portfolio />
       <Testimonials />
       <Contacts />
+      <Footer />
     </div>
   )
 }

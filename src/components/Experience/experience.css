@@ -39,3 +39,7 @@
 .achievement span:last-child {
   color: var(--orange);
 }
+/* Dark Mode Style */
+.App.darkMode .circle {
+  color: var(--black);
+}
