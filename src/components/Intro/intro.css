@@ -3,14 +3,13 @@
   height: 77vh;
   margin-top: 6rem;
 }
-.i-left {
+.intro .i-left {
   display: flex;
   position: relative;
   flex: 1;
   flex-direction: column;
   gap: 2rem;
 }
-
 .i-icons {
   margin-top: 3rem;
   display: flex;

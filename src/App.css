@@ -16,6 +16,10 @@
   overflow: hidden;
   color: var(--black);
 }
+.App.darkMode {
+  background: var(--black);
+  color: white;
+}
 .button {
   cursor: pointer;
   width: max-content;

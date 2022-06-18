@@ -22,3 +22,7 @@
 .i-name + a {
   display: block;
 }
+/* Dark Mode Style */
+.App.darkMode .i-name > :nth-child(1) {
+  color: white;
+}
