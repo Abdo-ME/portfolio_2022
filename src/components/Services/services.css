@@ -18,3 +18,48 @@
 .cards > * {
   position: absolute;
 }
+
+/* =============Media queries (Mediem Devices)=========== */
+@media screen and (max-width: 1024px) {
+}
+
+/* =============Media queries (Small Devices)=========== */
+@media screen and (min-width: 992px) {
+  .services {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .services {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 70rem;
+    margin-bottom: 3rem;
+  }
+  .services .awesome {
+    align-items: center;
+  }
+  .services .i-name {
+    align-items: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .cards > * {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services {
+    height: 85rem;
+    gap: 2rem;
+  }
+  .services .awesome {
+    flex: unset;
+  }
+}

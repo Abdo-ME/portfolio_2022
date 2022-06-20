@@ -39,3 +39,20 @@
 .achievement span:last-child {
   color: var(--orange);
 }
+/* Dark Mode Style */
+.App.darkMode .circle {
+  color: var(--black);
+}
+/* =============Media queries (Small Devices)=========== */
+@media screen and (min-width: 992px) {
+  .experience {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience {
+    flex-direction: column;
+    margin-bottom: 14rem;
+  }
+}

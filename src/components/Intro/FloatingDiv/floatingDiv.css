@@ -14,3 +14,7 @@
   font-family: sans-serif;
   font-size: 16px;
 }
+/* Dark Mode */
+.App.darkMode .floating-div {
+  color: var(--black);
+}
