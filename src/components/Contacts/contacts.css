@@ -50,3 +50,34 @@ textarea {
   padding: 18px 71px;
   font-size: 25px;
 }
+
+/* =============Media queries (Mediem Devices)=========== */
+@media screen and (max-width: 1024px) {
+}
+
+/* =============Media queries (Small Devices)=========== */
+@media screen and (max-width: 992px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 0;
+    align-items: center;
+  }
+  .c-right {
+    width: 100%;
+  }
+  .c-right form {
+    width: 95%;
+  }
+  .c-right .user {
+    width: 100%;
+  }
+  .awesome {
+    flex: unset;
+  }
+}

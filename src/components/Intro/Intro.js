@@ -11,10 +11,12 @@ import Thumbup from '../../img/thumbup.png'
 import Glassesimoji from '../../img/glassesimoji.png'
 import FloatingDiv from './FloatingDiv/FloatingDiv'
 import HeadTitle from '../headTitle/HeadTitle'
+import { motion } from 'framer-motion'
 
 const Intro = () => {
+    const transition = { duration: 2, type: 'spring' }
     return (
-        <div className='intro'>
+        <div className='intro' id='home'>
             <div className="i-left">
                 <HeadTitle title1='Hey! I Am' title2='Abdelhak Mehda' bodyTxt='Frontend Devoloper with hight level of experience in web devolopment, producting the quality work' btnTxt='Hire me' />
                 <div className="i-icons">
@@ -33,13 +35,28 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={Boy} alt="" />
-                <img src={Glassesimoji} alt="" />
-                <div style={{ top: '-4%', left: '68%' }}>
+                <motion.img
+                    src={Glassesimoji} alt=""
+                    initial={{ left: '-36%' }}
+                    whileInView={{ left: '-20%' }}
+                    transition={transition}
+                />
+                <motion.div
+                    style={{ top: '-4%', left: '68%' }}
+                    initial={{ top: '0', left: '74%' }}
+                    whileInView={{ left: '68%' }}
+                    transition={transition}
+                >
                     <FloatingDiv img={Crown} txt1='Web' txt2='Developer' />
-                </div>
-                <div style={{ top: '10rem', left: '0' }}>
+                </motion.div>
+                <motion.div
+                    style={{ top: '10rem', left: '0' }}
+                    initial={{ top: '18rem', left: '9rem' }}
+                    whileInView={{ left: '0rem' }}
+                    transition={transition}
+                >
                     <FloatingDiv img={Thumbup} txt1='Best Design' txt2='Award' />
-                </div>
+                </motion.div>
                 {/* bluer Divs */}
                 <div className="blur" ></div>
                 <div className="blur" style={{

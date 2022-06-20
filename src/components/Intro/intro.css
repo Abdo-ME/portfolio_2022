@@ -58,3 +58,35 @@
   top: -18%;
   left: 56%;
 }
+/* =============Media queries (Mediem Devices)=========== */
+@media screen and (max-width: 1024px) {
+}
+
+/* =============Media queries (Small Devices)=========== */
+@media screen and (min-width: 992px) {
+  .intro {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .i-right > div {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    height: 160vh;
+  }
+  .intro .i-right {
+    transform: scale(0.8);
+  }
+  .intro .i-left {
+    align-items: center;
+  }
+  .intro .i-icons {
+    margin-top: 0;
+  }
+}

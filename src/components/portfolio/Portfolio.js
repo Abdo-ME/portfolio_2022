@@ -6,16 +6,28 @@ import pf2 from '../../img/pf2.png'
 import pf3 from '../../img/pf3.png'
 import pf4 from '../../img/pf4.png'
 const Portfolio = () => {
+    let viewportWidth = window.innerWidth;
+    let slidesPerViewNum = 1
+    if (viewportWidth <= 600) {
+        slidesPerViewNum = 1
+    } else if (viewportWidth <= 992) {
+        slidesPerViewNum = 2
+    } else if (viewportWidth > 992) {
+        slidesPerViewNum = 3
+
+    }
+    console.log(slidesPerViewNum)
+
     return (
-        <div className='portfolio'>
+        <div className='portfolio' id='portfolio'>
             {/* heading */}
             <span>Recent Projects</span>
             <span>Portfolio</span>
 
             {/* slider */}
             <Swiper
-                spaceBetween={30}
-                slidesPerView={3}
+                spaceBetween={50}
+                slidesPerView={slidesPerViewNum}
                 grabCursor={true}
                 className='portfolio-slider'
             >

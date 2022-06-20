@@ -7,11 +7,14 @@ import CV from '../../img/cv.pdf'
 
 import HeadTitle from '../headTitle/HeadTitle'
 import Card from './cards/Card'
+import { motion } from 'framer-motion'
 
 
 const Services = () => {
+    const transition = { duration: 1, type: 'spring' }
+
     return (
-        <div className='services'>
+        <div className='services' id='services'>
 
             {/* left Side */}
             <div className="awesome">
@@ -21,15 +24,30 @@ const Services = () => {
             {/* right side */}
             <div className="cards">
 
-                <div style={{ left: '14rem' }}>
+                <motion.div
+                    // style={{ left: '14rem' }}
+                    initial={{ left: '25%' }}
+                    whileInView={{ left: '10rem' }}
+                    transition={transition}
+                >
                     <Card emoji={HeartEmoji} heading='Design' detail='Figma, Sketch, photoshop, Adobe Xd' />
-                </div>
-                <div style={{ top: '12rem', left: '-4rem' }}>
+                </motion.div>
+                <motion.div
+                    // style={{ top: '12rem', left: '-4rem' }}
+                    initial={{ top: '10rem', left: '4rem' }}
+                    whileInView={{ left: '-25%' }}
+                    transition={transition}
+                >
                     <Card emoji={Glasses} heading='Developer' detail='Html/Css, JavaScript,Bootstrap,React.' />
-                </div>
-                <div style={{ top: '19rem', left: '12rem' }}>
+                </motion.div>
+                <motion.div
+                    // style={{ top: '19rem', left: '12rem' }}
+                    initial={{ top: '19rem', left: '2rem' }}
+                    whileInView={{ left: '45%' }}
+                    transition={transition}
+                >
                     <Card emoji={Humble} heading='UI/UX' detail='Lorem ipsum dolor sit amet consectetur.' />
-                </div>
+                </motion.div>
             </div>
 
         </div>
