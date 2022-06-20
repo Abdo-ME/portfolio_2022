@@ -37,3 +37,17 @@
   cursor: pointer;
   color: var(--orange);
 }
+
+/* =============Media queries (Mediem Devices)=========== */
+@media screen and (max-width: 1024px) {
+}
+
+/* =============Media queries (Small Devices)=========== */
+@media screen and (max-width: 992px) {
+  .n-right {
+    display: none;
+  }
+  .n-left {
+    justify-content: space-between;
+  }
+}

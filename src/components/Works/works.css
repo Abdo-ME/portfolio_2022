@@ -18,7 +18,7 @@
 }
 .works .w-mainCircle {
   position: absolute;
-  left: 9rem;
+  left: 3rem;
   top: 2rem;
   background: white;
   width: 18rem;
@@ -70,11 +70,54 @@
 }
 .works .w-backCircle.blueCircle {
   background: #194988;
-  left: 18rem;
-  top: 0;
+  left: 11rem;
+  top: 2rem;
 }
 .works .w-backCircle.yellowCircle {
   background: #f5c32c;
-  left: 18rem;
+  left: 11rem;
   top: 8rem;
+}
+
+/* =============Media queries (Mediem Devices)=========== */
+@media screen and (max-width: 1024px) {
+}
+
+/* =============Media queries (Small Devices)=========== */
+@media screen and (max-width: 992px) {
+  .works {
+    flex-direction: column;
+    padding: 0;
+    height: 40rem;
+    margin-bottom: 4rem;
+  }
+  .works .left {
+    align-items: center;
+  }
+  .works .i-name {
+    text-align: center;
+  }
+  .works .right {
+    transform: scale(0.8);
+  }
+
+  .works .w-mainCircle {
+    position: absolute;
+    left: 0;
+  }
+
+  .works .w-backCircle.blueCircle {
+    left: 10rem;
+    top: 38px;
+  }
+  .works .w-backCircle.yellowCircle {
+    left: 10rem;
+    top: 8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .works {
+    padding: 0;
+  }
 }

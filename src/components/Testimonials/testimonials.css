@@ -41,6 +41,9 @@
 .testimonial span {
   color: var(--gray);
 }
+.App.darkMode .testimonial span {
+  color: white;
+}
 /* slider */
 .testimonials .swiper {
   width: 100%;
@@ -53,4 +56,18 @@
 }
 .testimonials .swiper-pagination-bullet-active {
   background: var(--orange);
+}
+
+/* =============Media queries (Small Devices)=========== */
+@media screen and (min-width: 992px) {
+  .testimonials {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .testimonials {
+    height: max-content;
+    padding: 0;
+    margin-top: 0;
+  }
 }
